@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  height: 80px;
+  width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #323232;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav a {
+  all: unset;
+  color: #797979;
+  margin: 0 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: #57bf84;
+}
+
+.sing-in {
+  all: unset;
+  border: #797979 1px solid;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #797979;
+  margin: 0 15px;
+}
+
+.trial {
+  all: unset;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #57bf84;
+}
+
+.results {
+  display: flex;
+}

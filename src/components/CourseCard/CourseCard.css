@@ -1,0 +1,56 @@
+.course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 15px 20px;
+  height: 140px;
+  border: 1px solid darkgray;
+}
+
+.course-img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.course-info {
+  margin: 0 15px;
+}
+
+.course-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 0;
+}
+
+.course-info p {
+  color: darkgrey;
+  font-size: 14px;
+}
+
+.course-info i {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.share-course {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-price {
+  color: #323232;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.fa-share {
+  padding: 12px 15px;
+  border: 1px solid darkgray;
+  border-radius: 3px;
+}
