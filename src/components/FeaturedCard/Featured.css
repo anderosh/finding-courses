@@ -1,0 +1,19 @@
+.featured {
+  padding: 2px 4px;
+  color: #57bf84;
+  font-size: 10px;
+  font-weight: 700;
+  border: 1px solid #57bf84;
+}
+
+.info-featured h4,
+span,
+p {
+  margin: 5px 0;
+}
+
+.info-featured {
+  max-height: 130px;
+  max-width: 290px;
+  margin: 0 15px;
+}

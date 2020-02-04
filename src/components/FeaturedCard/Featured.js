@@ -1,14 +1,20 @@
 import React from 'react'
-import './CourseCard.css'
+import './Featured.css'
 
 const baseUrl = 'https://test.storage.cebroker.com/cebroker/'
 
-const CourseCard = results => (
+const FeaturedCard = results => (
   <div className="course-card">
-    <div className="course-info">
+    <img
+      className="course-img"
+      src={`${baseUrl}${results.course.course.featuredBanner}`}
+    ></img>
+
+    <div className="course-info info-featured">
       <h4>{results.course.course.name}</h4>
+      <span className="featured">FEATURED</span>
       <p>{results.course.course.provider.name}</p>
-      <div>
+      <div className="time-type">
         <i class="far fa-clock"></i>
         {results.course.course.components[0].profession.totalHours} Hours
         <i class="fas fa-desktop"></i>
@@ -29,4 +35,4 @@ const CourseCard = results => (
   </div>
 )
 
-export default CourseCard
+export default FeaturedCard

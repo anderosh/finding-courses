@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getFeaturedCourses, getCourses } from './SearchAPI'
 import Filter from '../Filter/Filter'
 import CourseCard from '../CourseCard/CourseCard'
+import FeaturedCard from '../FeaturedCard/Featured'
 import './Search.css'
 
 const Search = () => {
@@ -11,7 +12,7 @@ const Search = () => {
   const [items, setItems] = useState('')
 
   useEffect(() => {
-    getFeaturedCourses(term).then(res => setFeatured(res.items))
+    getFeaturedCourses().then(res => setFeatured(res.items))
     getCourses(term).then(res => setCourses(res.items))
     getCourses(term).then(res => setItems(res.totalItems))
   }, [])
@@ -31,8 +32,12 @@ const Search = () => {
       <div className="banner-container">
         <div className="find-options">
           <span>Find CE for a </span>
-          <a href="#">Florida</a>
-          <a href="#">Medical Doctor</a>
+          <a href="#">
+            Florida <i class="fas fa-sort-down"></i>
+          </a>
+          <a href="#">
+            Medical Doctor <i class="fas fa-sort-down"></i>
+          </a>
         </div>
         <form onSubmit={handelSubmit}>
           <i class="fas fa-search"></i>
@@ -62,7 +67,7 @@ const Search = () => {
           </div>
           <div>
             {featured.length > 0 &&
-              featured.map(course => <CourseCard course={course} />)}
+              featured.map(course => <FeaturedCard course={course} />)}
           </div>
           <div>
             {courses.length > 0 &&

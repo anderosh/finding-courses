@@ -12,8 +12,7 @@
 }
 
 .find-options {
-  text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
 }
 
@@ -32,6 +31,12 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+.fa-sort-down {
+  position: relative;
+  top: -10%;
+  font-size: 16px;
 }
 
 .fa-search {
